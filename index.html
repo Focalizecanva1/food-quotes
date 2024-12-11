@@ -1,1 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frases sobre o Prazer em Comer</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+            background-color: #f8f8f8;
+        }
+
+        .quote {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-top: 20px;
+            max-width: 80%;
+            margin-bottom: 20px;
+        }
+
+        img {
+            width: 150px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .quote-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Logo -->
+    <img src="https://github.com/urbfitness/checkinburgerbar/blob/main/assets/%23908900%20(500%20x%20500%20px).png?raw=true" alt="Logo">
+
+    <!-- Frase -->
+    <div class="quote-container">
+        <div class="quote"></div>
+    </div>
+
+    <script>
+        const quotes = [
+            "Comer é um prazer que deve ser vivido com alegria e consciência.",
+            "A comida é o abraço que damos ao nosso corpo.",
+            "Nada une mais do que uma boa refeição compartilhada com amigos.",
+            "A felicidade é a combinação de bons momentos e boa comida.",
+            "Cada refeição é uma nova oportunidade de experimentar a vida.",
+            "A comida é arte, e o prato, uma tela.",
+            "A vida é curta, então coma a sobremesa primeiro!",
+            "A comida tem o poder de nos conectar e nos alegrar.",
+            "Boa comida é o melhor remédio para a alma.",
+            "A cozinha é o coração da casa, onde o amor é servido.",
+            "Comer bem é uma forma de cuidar de si mesmo.",
+            "O prazer de comer vai além do sabor, é também sobre a experiência.",
+            "A comida é a celebração da vida.",
+            "Comer é um ato de amor, tanto para o corpo quanto para a mente.",
+            "Quando se come com prazer, tudo parece mais saboroso.",
+            "A comida não é só combustível, é um convite à felicidade.",
+            "Comer é um prazer que deve ser compartilhado.",
+            "O verdadeiro prazer está em saborear cada mordida.",
+            "Comida de verdade é amor à primeira mordida.",
+            "Não existe prazer maior do que uma refeição deliciosa.",
+            "A melhor comida é aquela que faz você se sentir bem.",
+            "Saborear a comida é uma arte que deve ser apreciada.",
+            "Uma boa refeição é um abraço para a alma.",
+            "Comer é um prazer simples e indispensável da vida.",
+            "Comer bem é sinônimo de saúde e felicidade.",
+            "Uma boa comida é sempre uma boa companhia.",
+            "A comida é a única coisa que pode ser tanto um prazer quanto uma necessidade.",
+            "Para mim, a felicidade tem sabor de chocolate.",
+            "Comer é uma forma de se reconectar com os sentidos.",
+            "Nada supera o prazer de um prato bem feito.",
+            "Quem não ama comida boa, não ama a vida.",
+            "Cada refeição é uma nova aventura para os sentidos.",
+            "A comida é uma celebração do prazer e da vida.",
+            "O segredo da felicidade está em uma boa refeição.",
+            "A verdadeira felicidade está em comer o que se ama.",
+            "Comer é um prazer diário que deve ser celebrado.",
+            "Quem come com prazer vive com alegria.",
+            "A comida é um convite à felicidade e ao prazer.",
+            "Comer é mais do que satisfazer a fome, é alimentar a alma.",
+            "Saber apreciar uma boa refeição é uma arte.",
+            "A comida deve ser saboreada com todos os sentidos.",
+            "Comer é a melhor forma de celebrar a vida.",
+            "A comida é um dos maiores prazeres da vida.",
+            "Comer é a forma mais deliciosa de viver o momento.",
+            "Cada prato é uma história que deve ser vivida e apreciada.",
+            "A comida nos ensina a apreciar as coisas simples da vida.",
+            "Comer é viver, e viver bem é comer bem.",
+            "A comida é um prazer que deve ser compartilhado com amor.",
+            "Cada refeição é uma nova chance de ser feliz.",
+            "O prazer de comer é o melhor antídoto contra as dificuldades da vida.",
+            "A verdadeira felicidade está em um prato cheio de sabor.",
+            "Comer com prazer é viver com prazer.",
+            "A comida é um prazer simples que todos podemos saborear.",
+            "O prazer de comer não se mede, se sente.",
+            "A comida tem a capacidade de transformar um dia comum em especial.",
+            "Comer é uma arte que deve ser celebrada todos os dias.",
+            "A comida nos conecta, nos alegra e nos faz viver melhor.",
+            "O prazer de comer é incomparável.",
+            "Comer com prazer é uma das maiores formas de felicidade.",
+            "Cada garfada é uma celebração da vida.",
+            "Comer bem é essencial para viver bem.",
+            "A comida é um dos maiores prazeres que a vida nos oferece.",
+            "O prazer de comer vai além do sabor, é uma experiência de vida.",
+            "Comer com prazer é viver a vida com intensidade.",
+            "Cada refeição é uma oportunidade de aproveitar o momento.",
+            "A comida é o tempero da vida, que a torna mais saborosa.",
+            "O prazer de comer é único e deve ser saboreado.",
+            "Comer é um prazer que nos leva a viver melhor.",
+            "Saborear a comida é uma das maiores alegrias da vida.",
+            "A comida tem o poder de transformar qualquer momento em algo especial.",
+            "Comer é um prazer que nutre não só o corpo, mas a alma.",
+            "Nada como uma boa refeição para alegrar o coração.",
+            "O prazer de comer está nos pequenos detalhes de cada prato.",
+            "Comer é um ato de prazer e satisfação.",
+            "A comida é o melhor presente que podemos nos dar.",
+            "A vida é feita de momentos bons, e a comida é um deles.",
+            "Comer com prazer é uma celebração do presente.",
+            "Comida boa é sinônimo de felicidade garantida.",
+            "Comer é o primeiro passo para uma vida cheia de prazer.",
+            "Nada melhor que uma boa comida para alegrar o espírito.",
+            "A comida é uma grande fonte de prazer para todos os sentidos.",
+            "Comer é um prazer, e o prazer é a essência da vida.",
+            "Comer com prazer é como viver plenamente.",
+            "A comida nos traz a felicidade em cada pedaço.",
+            "Comer é um prazer universal que todos podemos compartilhar.",
+            "Saborear um prato delicioso é um prazer que vale a pena.",
+            "O prazer de comer está na simplicidade de um bom prato.",
+            "Comer bem é a melhor maneira de ser feliz.",
+            "Comer é uma celebração de tudo que é bom na vida.",
+            "Nada supera o prazer de comer algo delicioso.",
+            "Comer com prazer é uma maneira de celebrar a vida.",
+            "Comer é um dos maiores prazeres que podemos vivenciar.",
+            "A comida é o melhor combustível para um dia feliz.",
+            "A verdadeira felicidade está em uma refeição deliciosa.",
+            "Comer é mais do que satisfazer a fome, é um prazer a ser saboreado.",
+            "O prazer de comer é um dos maiores presentes da vida.",
+            "Comer é sinônimo de prazer, conforto e felicidade.",
+            "A comida tem o poder de alegrar até os dias mais difíceis.",
+            "Comer bem é sinônimo de viver bem.",
+            "A comida é um prazer que deve ser apreciado a cada refeição.",
+            "Nada como uma boa comida para curar a alma.",
+            "Comer com prazer é um dos maiores prazeres da vida.",
+            "A comida é a melhor maneira de nos conectarmos com os outros.",
+            "Comer bem é viver bem e ser feliz.",
+            "A comida traz prazer e nos lembra do melhor da vida.",
+            "Comer com prazer é celebrar a vida a cada refeição.",
+            "A comida é o prazer mais simples e delicioso que a vida oferece.",
+            "Comer é a melhor forma de aproveitar o presente."
+        ];
+
+        function showRandomQuote() {
+            const randomIndex = Math.floor(Math.random() * quotes.length);
+            document.querySelector('.quote').textContent = quotes[randomIndex];
+        }
+
+        // Exibe uma frase aleatória ao carregar a página
+        window.onload = showRandomQuote;
+    </script>
+</body>
+</html>
 
